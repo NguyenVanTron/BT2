@@ -1,5 +1,6 @@
 # projectjava
 Hibernate Mysql
+Xây dựng và chạy chương trình trên Eclipse
 Swing, Hibernate, viết chương trình điểm danh đơn giản cho 2 loại người dùng: 
 Giáo vụ: 
 1. Tạo môn học, qui định tên mã môn, tên môn, thời khóa biểu (ngày bắt đầu học, ngày kết thúc môn, 15 tuần, thứ trong tuần, giờ bắt đầu, giờ kết thúc, tên phòng học). 
