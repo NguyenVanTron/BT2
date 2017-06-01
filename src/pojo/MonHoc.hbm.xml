@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 6, 2017 11:03:58 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class catalog ="diemdanhsinhvien" name="pojo.MonHoc" table="MONHOC">
+        <id name="maMonHoc" type="java.lang.String">
+            <column name="MAMONHOC" />
+            <generator class="assigned" />
+        </id>
+        <property name="tenMonHoc" type="java.lang.String">
+            <column name="TENMONHOC" />
+        </property>
+        <property name="ngayBatDau" type="java.util.Date">
+            <column name="NGAYBATDAU" />
+        </property>
+        <property name="ngayKetThuc" type="java.util.Date">
+            <column name="NGAYKETTHUC" />
+        </property>
+        <property name="thuTrongTuan" type="java.lang.String">
+            <column name="THUTRONGTUAN" />
+        </property>
+        <property name="thoiGianBatDau" type="java.sql.Time">
+            <column name="THOIGIANBATDAU" />
+        </property>
+        <property name="thoiGianKetThuc" type="java.sql.Time">
+            <column name="THOIGIANKETTHUC" />
+        </property>
+        <property name="tenPhongHoc" type="java.lang.String">
+            <column name="TENPHONGHOC" />
+        </property>
+       <set name="danhSachDiemDanh" table="DANHSACHDIEMDANH" fetch="join" inverse="true">
+            <key>
+                <column name="MAMONHOC" not-null="true"/>
+            </key>
+            <one-to-many class="pojo.DanhSachDiemDanh" />
+        </set>
+    </class>
+</hibernate-mapping>

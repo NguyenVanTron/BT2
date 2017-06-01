@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 6, 2017 11:03:58 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class catalog ="diemdanhsinhvien" name="pojo.TaiKhoan" table="TAIKHOAN">
+        <id name="maTaiKhoan" type="java.lang.String">
+            <column name="MATAIKHOAN" />
+            <generator class="assigned" />
+        </id>
+        <property name="tenNguoiDung" type="java.lang.String">
+            <column name="TENNGUOIDUNG" />
+        </property>
+        <property name="matKhau" type="java.lang.String" access="field">
+            <column name="MATKHAU" />
+        </property>
+        <property name="loai" type="java.lang.Boolean">
+            <column name="LOAI" />
+        </property>
+        <set name="monHoc" fetch="join" inverse="false">
+            <key>
+                <column name="MATAIKHOAN" />
+            </key>
+            <one-to-many class="pojo.DanhSachDiemDanh" />
+        </set>
+    </class>
+</hibernate-mapping>
