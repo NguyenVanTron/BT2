@@ -8,7 +8,9 @@ Giáo vụ:
 Sinh viên: 1. Điểm danh. Chỉ điểm danh khi chọn chức năng đúng ngày, giờ. 
 2. Xem kết quả điểm danh của mình, hiển thị những hôm nào vắng, hôm nào có đi học, hôm nào chưa có dữ liệu (do chưa có ngày). 
 Yêu cầu khác: - Đổi password. - Lưu ý, sv mới vào hệ thống, sẽ được phát sinh username/password là MSSV/MSSV. Khi sv log in lần đầu, phải bắt buộc sv đổi password. - Mật khẩu được hash dưới CSDL.
+
 Hướng dẫn sử dụng : https://drive.google.com/file/d/0B_PYNK7AU-PQdnRZM29jVVBJSjQ/view?usp=sharing
+
 Ghi chú:
 Tài khoản giáo vụ: GV001
 pass: GV001
